@@ -21,7 +21,7 @@ import com.te.employeemanagementsystem.service.MyServices;
 public class MyController {
 	@Autowired
 	MyServices services;
-	@PostMapping("/employees")
+	@PostMapping("/addEmployees")
 	public ResponseEntity<EmployeesResponse> insert(@RequestBody AddEmployee emp){
 		AddEmployee addData = services.addData(emp);
 		EmployeesResponse employeesResponse = new EmployeesResponse();
